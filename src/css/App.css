@@ -1,0 +1,36 @@
+.booklist {
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.booklist>.bookitem {
+    border: 1px solid black;
+        padding: 30px;
+        text-align: center;
+        max-width: 301px;
+    
+}
+.booklist>.bookitem>h2{
+    font-size: 22px;
+        max-width: 240px;
+}
+.booklist>.bookitem>button{
+    margin: 20px 0px 0px 0px;
+        padding: 9px;
+        width: 56%;
+        background-color: rgb(127, 250, 127);
+        border-radius: 6px;
+}
+
+ @media only screen and (max-width: 600px) {
+    .booklist {
+            display: grid;
+            grid-template-columns:  auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
+ }
